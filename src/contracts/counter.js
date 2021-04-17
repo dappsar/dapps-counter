@@ -10,7 +10,6 @@ export async function getDeployed () {
   const web3 = getWeb3()
   const from = await getAccount()
   const address = process.env.REACT_APP_COUNTER_ADDRESS
-  const x = Counter(web3, address, { from })
-  console.log(x)
-  return x
+  const contract = Counter(web3, address, { from })
+  return contract
 }
