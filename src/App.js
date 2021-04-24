@@ -23,7 +23,7 @@ function App () {
 
   return (
     <div className='App'>
-      {count && <Counter counter={123} />}
+      {count && <Counter counter={count} />}
     </div>
   )
 }
